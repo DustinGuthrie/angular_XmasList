@@ -1,0 +1,19 @@
+{
+  "name": "angular_intro",
+  "homepage": "https://github.com/DustinGuthrie/angular_XmasList",
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-route": "~1.4.8",
+    "node-sass": "~3.4.2"
+  }
+}
