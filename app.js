@@ -8,13 +8,12 @@
     .config(function ($routeProvider) {
       $routeProvider
         .when('/', {
-          template: '<h1>hello angular</h1><a href="#/xmasList">go to the list</a><button ng-click="alertMe()">alert me</button>{{msg}}',
+          template: '<h1>hello angular</h1><a href="#/xmasList">Create a List</a><button ng-click="alertMe()">alert me</button>{{msg}}',
           controller: 'MainController'
         })
         .when('/xmasList', {
-          templateUrl: 'views/xmasList/list.html',
-          controller: 'BooksController'
-
+          templateUrl: 'views/christmasLists/list.html',
+          controller: 'XmasListsController'
         })
         // .when('/books/:bookId', {
         //   templateUrl: 'views/books/show.html',
@@ -25,8 +24,8 @@
         //   controller: 'BooksController'
         // })
         .when('/addList', {
-          templateUrl: 'views/books/create.html',
-          controller: 'BooksController'
+          templateUrl: 'views/christmasLists/create.html',
+          controller: 'XmasListsController'
         })
         .when('/404', {
           templateUrl: 'views/404.html'
