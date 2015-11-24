@@ -8,7 +8,8 @@
     .config(function ($routeProvider) {
       $routeProvider
         .when('/', {
-          template: '<h1>hello angular</h1><a href="#/xmasList">Create a List</a><button ng-click="alertMe()">alert me</button>{{msg}}',
+          // template: '<h1>Merry Christmas!</h1><a href="#/xmasList">Start creating a List</a><button ng-click="alertMe()">alert me</button>{{msg}}',
+          templateUrl: 'views/christmasLists/home.html',
           controller: 'MainController'
         })
         .when('/xmasList', {

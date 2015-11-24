@@ -1,6 +1,10 @@
 <h1>Create page</h1>
 
-<input type="text" name="cover" ng-model="newList.cover" placeholder="cover" value="">
-<input type="text" name="title" ng-model="newList.title" placeholder="title" value="">
-<input type="text" ng-model="newList.description" name="description" placeholder="description" value="">
-<button type="button" ng-click="addList(newList)" name="button">Add List</button>
+<input type="text" name="photo" ng-model="newList.name" placeholder="Recipient Name" value="">
+<input type="text" name="title" ng-model="newList.gift" placeholder="Gift Item" value="">
+<input type="text" name="store" ng-model="newList.store" placeholder="Where to Purchase" value="">
+<input type="text" name="price" ng-model="newList.price" placeholder="Price" value="">
+<input type="text" name="price" ng-model="newList.online" placeholder="Link to Purchase Online" value="">
+<input type="text" name="photo" ng-model="newList.photo" placeholder="Photo" value="">
+
+<button type="button" ng-click="addList(newList)" name="button">Add to List</button>
