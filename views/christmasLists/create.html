@@ -1,3 +1,5 @@
+<div class="col-md-1"></div>
+<div class="col-md-10">
 <h1>Add Items</h1>
 
 <!-- <input type="text" name="photo" ng-model="newList.name" placeholder="Recipient Name" value=""> -->
@@ -6,5 +8,18 @@
 <input type="text" name="price" ng-model="newList.price" placeholder="Price" value="">
 <input type="text" name="price" ng-model="newList.online" placeholder="Link to Purchase Online" value="">
 <input type="text" name="photo" ng-model="newList.photo" placeholder="Photo" value="">
+<!-- </div>
 
-<button type="button" ng-click="addList(newList)" name="button">Add to List</button>
+<div class="col-md-12 btn-group"> -->
+<button type="button" class="btn btn-default add" ng-click="addList(newList)" name="button">Add to List</button>
+</div>
+<div class="col-md-1"></div>
+
+<div class="col-md-4"></div>
+
+<div class="col-md-4 btn-group">
+  <input type="button" class="btn btn-default viewAll" style="align-items: center" onclick="location.href='#/xmasList';" value="View All Items for Purchase"/>
+  <input type="button" class="btn btn-default" style="" onclick="location.href='/';" value="Home"/>
+
+</div>
+<div class="col-md-4"></div>

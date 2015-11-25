@@ -1,16 +1,25 @@
-<div class="cart">
-  <h1>Shopping Cart</h1>
-  <button type="text" name="button" class="cartItems" value="">{{numberOfItems}} Items in Cart</button>
+<div class="checkout">
+<div class="col-md-2 homeCart">
+  <input type="button" class="btn btn-default homeCart" style="align-items: center" onclick="location.href='/';" value="Home"/>
 </div>
+
+<div class="col-md-6 cart">
+  <h1>Shopping Cart</h1>
+</div>
+<div class="col-md-2">
+  <button type="text" name="button" class="btn btn-default cartItems" value=""><span class="glyphicon glyphicon-shopping-cart"></span>&nbsp&nbsp{{numberOfItems}} Items in Cart</button>
+</div>
+
 <div ng-repeat="cart in xmasListCart">
 <!-- <div ng-repeat="guthriexmasList in xmasListExamples"> -->
   <div class="col-md-6 cartProd">
     <!-- <h3>{{guthriexmasList.name}}</h3> -->
-    <h3>{{cart.gift}}</h3>
-    <h5>{{cart.store}}</h5>
-    <h5>{{cart.price}}</h5>
+    <h3 style="color: white">{{cart.gift}}</h3>
+    <h5 style="color: white">{{cart.store}}</h5>
+    <h5 style="color: white">{{cart.price}}</h5>
     <a href="{{cart.online}}"><button>Purchase Online</button></a>
     <button type="button" ng-click="deleteMe(cart._id)" name="button">Remove From Cart</button>
     <img ng-class="image" ng-src="{{cart.photo}}" style="width: 200px; max-height: 180px;" alt="" />
   </div>
+</div>
 </div>
