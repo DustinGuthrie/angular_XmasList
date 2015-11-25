@@ -1,3 +1,77 @@
-.image {
-  width: 100px;
-}
+.homepage {
+  text-align: center;
+  padding-top: 80px; }
+  .homepage h1 {
+    font-size: 4em;
+    color: white; }
+  .homepage h3 {
+    color: white; }
+
+.container {
+  background-image: url(http://wallensteyn.com/wp-content/uploads/2015/10/CHRISTMAS-WALLPAPER-275.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  width: 100%;
+  position: fixed;
+  top: -80px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: auto; }
+
+.createList {
+  float: right; }
+
+.admin {
+  float: left; }
+
+.viewCart {
+  float: right;
+  margin-right: 50px; }
+
+.cartItems {
+  float: right;
+  margin-right: 50px; }
+
+.hidden {
+  display: none; }
+
+.list {
+  background-image: url(http://images4.fanpop.com/image/photos/22200000/Christmas-wallpaper-christmas-22227613-1920-1200.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  width: 100%;
+  position: fixed;
+  top: -80px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: auto; }
+
+.ideas {
+  margin-top: 100px;
+  text-align: center; }
+
+.products {
+  margin-left: 0;
+  margin-top: 120px;
+  text-align: center; }
+
+.viewCart {
+  float: right;
+  margin-top: 120px;
+  margin-right: 130px; }
+
+.cart {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px; }
+
+.cartProd {
+  text-align: center; }

@@ -3,15 +3,22 @@
   <head>
     <meta charset="utf-8">
     <title>Christmas List</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles.css" media="screen" title="no title" charset="utf-8">
+    <!-- <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstap.css"> -->
+
   </head>
   <body ng-app="xmasList">
-
+  <section>
     <ng-view></ng-view>
-    
+  </section>
+
 
     <script src="bower_components/angular/angular.js" charset="utf-8"></script>
     <script src="bower_components/angular-route/angular-route.js" charset="utf-8"></script>
     <script src="bower_components/underscore/underscore.js" charset="utf-8"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap.js" charset="utf-8"></script>
 
     <script src="app.js" charset="utf-8"></script>
     <script src="controllers.js" charset="utf-8"></script>

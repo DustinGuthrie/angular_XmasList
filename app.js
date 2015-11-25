@@ -16,14 +16,10 @@
           templateUrl: 'views/christmasLists/list.html',
           controller: 'XmasListsController'
         })
-        // .when('/books/:bookId', {
-        //   templateUrl: 'views/books/show.html',
-        //   controller: 'BooksController'
-        // })
-        // .when('/books/:bookId/edit', {
-        //   templateUrl: 'views/books/edit.html',
-        //   controller: 'BooksController'
-        // })
+        .when('/cart', {
+          templateUrl: 'views/christmasLists/cart.html',
+          controller: 'XmasCartController'
+        })
         .when('/addList', {
           templateUrl: 'views/christmasLists/create.html',
           controller: 'XmasListsController'

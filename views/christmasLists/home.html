@@ -1,11 +1,31 @@
-<h1>Merry Christmas!</h1>
-<h3>Made your list...Did you check it twice?</h3>
-<h4>Kick off your shoes, drink some Nog and store your Christmas gift list with us!</h4>
-<!-- <h4>You can even purchase gifts straight off the list.</h4> -->
-<!-- <a href="#/xmasList" class="button">Start creating a List</a> -->
-<!-- <button ng-click="" a href="#/addList">Start creating a List</button>{{msg}}', -->
-<input type="button" onclick="location.href='#/addList';" value="Create a List"/>
-<input type="button" onclick="location.href='#/xmasList';" value="I Already Have a List"/>
+<!-- <body> -->
+<div class="container">
+    <div class="row homepage">
+      <div class="col-md-12">
+        <h1>Merry Christmas!</h1>
+        <!-- <h3>Made your list...Did you check it twice?</h3> -->
+        <h3>Kick off your shoes, drink some Nog and create a <i>WISH</i> list</h3>
+      </div>
+        <!-- <h4>You can even purchase gifts straight off the list.</h4> -->
+        <!-- <a href="#/xmasList" class="button">Start creating a List</a> -->
+        <!-- <button ng-click="" a href="#/addList">Start creating a List</button>{{msg}}', -->
+        <div class="col-md-3 btn-group btn-group-lg">
+          <input type="button" class="btn btn-default createList" style="float:right" onclick="location.href='#/xmasList';" value="Create List"/>
+        </div>
+
+      <div class="col-md-3"></div>
+
+      <div class="col-md-3"></div>
+      <div class="col-md-3 btn-group btn-group-lg">
+        <input type="button" class="btn btn-default admin" style="float:left" onclick="location.href='#/addList';" value="Admin Login"/>
+      </div>
+
+
+
+      </div>
+    </div>
+</div>
+<!-- </body> -->
 
 
 
