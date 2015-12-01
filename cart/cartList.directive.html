@@ -1,0 +1,11 @@
+<div class="xmasListCart">
+
+<div class="col-md-6 cartProd">
+  <h3 style="color: white">{{cart.gift}}</h3>
+  <h5 style="color: white">{{cart.store}}</h5>
+  <h5 style="color: white">{{cart.price}}</h5>
+  <a href="{{cart.online}}"><button>Purchase Online</button></a>
+  <button type="button" ng-click="deleteMe(cart._id)" name="button">Remove From Cart</button>
+  <img ng-class="image" ng-src="{{cart.photo}}" style="width: 200px; max-height: 180px;" alt="" />
+</div>
+</div>

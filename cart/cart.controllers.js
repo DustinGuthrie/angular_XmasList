@@ -6,19 +6,23 @@
 
       .controller('XmasCartController', function ($scope, CartService, XmasListService){
 
+        var vm = this;
+
+
         CartService.getCarts().success(function (xmasCart) {
           console.log(xmasCart);
           console.log(xmasCart.length);
 
-          $scope.xmasListCart = xmasCart;
-          $scope.numberOfItems = $scope.getNumberInCart();
+          this.xmasListCart = xmasCart;
+          console.log(xmasListCart);
+          $scope.numberOfItems = vm.getNumberInCart();
         });
-        $scope.getNumberInCart = function(){
-          var numberinCart = $scope.xmasListCart.length;
-          console.log(numberinCart);
+          vm.getNumberInCart = function(){
+          var numberinCart = xmasListCart.length;
+          // console.log(numberinCart);
           return numberinCart;
         };
-          $scope.deleteMe = function (idx) {
+          vm.deleteMe = function (idx) {
             console.log("Im being deleted!");
             console.log(idx);
             CartService.deleteCart(idx);

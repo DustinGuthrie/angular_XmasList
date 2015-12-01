@@ -5,17 +5,19 @@
 
     .controller('XmasListsController', function ($scope, XmasListService, CartService){
 
+      var vm = this;
+
       XmasListService.getLists().success(function (xmasList) {
         console.log(xmasList);
-        $scope.xmasListExamples = xmasList;
+        vm.xmasListExamples = xmasList;
         // $scope.getCountNumber = $scope.getCount();
-        $scope.numberOfItems = $scope.getNumber();
+        // $scope.numberOfItems = vm.getNumber();
       });
-        $scope.addList = function (newList) {
+        vm.addList = function (newList) {
           // console.log(newList);
           XmasListService.createList(newList);
         };
-        $scope.addCart = function (newCart) {
+        vm.addCart = function (newCart) {
           console.log(newCart);
           CartService.createCart(newCart);
         };

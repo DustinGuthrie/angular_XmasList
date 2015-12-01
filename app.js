@@ -12,7 +12,7 @@
         .when('/', {
           // template: '<h1>Merry Christmas!</h1><a href="#/xmasList">Start creating a List</a><button ng-click="alertMe()">alert me</button>{{msg}}',
           templateUrl: 'views/christmasLists/home.html',
-          controller: 'MainController'
+          controller: 'MainController as mainCtrl'
         })
         // .when('/xmasList', {
         //   templateUrl: 'views/christmasLists/list.html',

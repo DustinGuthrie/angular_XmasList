@@ -6,28 +6,7 @@
     <h1>Gift Ideas</h1>
   </div>
   <div class="col-md-3">
-    <a href='http://localhost:3000/#/cart'><button class="btn btn-default viewCart"><span class="glyphicon glyphicon-shopping-cart"></span>&nbsp&nbspView Cart</button></a>
+    <a href='http://localhost:3000/#/cart'><button class="btn btn-default viewCart"><span class="glyphicon glyphicon-shopping-cart"></span>&nbsp&nbsp{{numberOfItems}} View Cart</button></a>
   </div>
 </div>
-
-
-
-<div ng-repeat="guthriexmasList in xmasListExamples">
-    <div class="col-md-3 products">
-      <h3 style='color: white'>{{guthriexmasList.gift}}</h3>
-      <button type="button" class="btn btn-default" ng-click="addCart(guthriexmasList)" name="button">Add to Cart</button>
-      <button type="button" class="btn btn-default" ng-click="" name="button">Review I</button>
-
-      <h5 class="hidden">{{guthriexmasList.store}}</h5>
-      <a href="{{guthriexmasList.online}}" class="hidden">Purchase Online</a>
-      <h5 style='color: white'>{{guthriexmasList.price}}</h5>
-      <img ng-class="image" ng-src="{{guthriexmasList.photo}}" style="width: 200px; max-height: 180px;" alt="" />
-    </div>
-  </div>
-
-<!-- <div ng-controller="XmasListsController as listCtrl">
-<flickr-photo ng-repeat="photo in flickrCtrl.photos" photo="photo" action="likesCtrl.likePhoto(photo)">
- <h2>{{photo.title}}</h2>
-</flickr-photo>
-
-</div> -->
+<xmas-listitem ng-repeat="item in listCtrl.xmasListExamples" guthriexmas-list="item" action="listCtrl.addCart"></xmas-listitem>

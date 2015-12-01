@@ -9,7 +9,7 @@
       $routeProvider
         .when('/cart', {
           templateUrl: 'views/christmasLists/cart.html',
-          controller: 'XmasCartController'
+          controller: 'XmasCartController as cartCtrl'
         });
     });
 
