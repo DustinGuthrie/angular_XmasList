@@ -2,8 +2,10 @@
   "use strict";
 
   angular
-    .module('xmasList', [
-      'ngRoute'
+    .module('xmasList',[
+      'ngRoute',
+      'products',
+      'cart'
     ])
     .config(function ($routeProvider) {
       $routeProvider
@@ -12,26 +14,23 @@
           templateUrl: 'views/christmasLists/home.html',
           controller: 'MainController'
         })
-        .when('/xmasList', {
-          templateUrl: 'views/christmasLists/list.html',
-          controller: 'XmasListsController'
-        })
-        .when('/cart', {
-          templateUrl: 'views/christmasLists/cart.html',
-          controller: 'XmasCartController'
-        })
-        .when('/addList', {
-          templateUrl: 'views/christmasLists/create.html',
-          controller: 'XmasListsController'
-        })
+        // .when('/xmasList', {
+        //   templateUrl: 'views/christmasLists/list.html',
+        //   controller: 'XmasListsController'
+        // })
+        // .when('/cart', {
+        //   templateUrl: 'views/christmasLists/cart.html',
+        //   controller: 'XmasCartController'
+        // })
+        // .when('/addList', {
+        //   templateUrl: 'views/christmasLists/create.html',
+        //   controller: 'XmasListsController'
+        // })
         .when('/404', {
           templateUrl: 'views/404.html'
         })
         .otherwise({ redirectTo: '/404'});
 
     });
-
-
-
 
 })();

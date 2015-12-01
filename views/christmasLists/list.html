@@ -13,21 +13,21 @@
 
 
 <div ng-repeat="guthriexmasList in xmasListExamples">
-  <!-- <div class="row"> -->
-  <!-- <h3>{{guthriexmasList.name}}</h3> -->
     <div class="col-md-3 products">
       <h3 style='color: white'>{{guthriexmasList.gift}}</h3>
-      <!-- <a href="{{guthriexmasList.online}}"><button>Add to Cart</button></a> -->
-      <!-- <button type="button" ng-click="deleteMe(guthriexmasList._id)" name="button">Remove From List</button> -->
       <button type="button" class="btn btn-default" ng-click="addCart(guthriexmasList)" name="button">Add to Cart</button>
       <button type="button" class="btn btn-default" ng-click="" name="button">Review I</button>
 
       <h5 class="hidden">{{guthriexmasList.store}}</h5>
-      <!-- <button on-click="location.href='{{guthriexmasList.online}}';" value="Purchase Online">Purchase Online</button> -->
       <a href="{{guthriexmasList.online}}" class="hidden">Purchase Online</a>
       <h5 style='color: white'>{{guthriexmasList.price}}</h5>
       <img ng-class="image" ng-src="{{guthriexmasList.photo}}" style="width: 200px; max-height: 180px;" alt="" />
     </div>
   </div>
-</div>
-<!-- </div> -->
+
+<!-- <div ng-controller="XmasListsController as listCtrl">
+<flickr-photo ng-repeat="photo in flickrCtrl.photos" photo="photo" action="likesCtrl.likePhoto(photo)">
+ <h2>{{photo.title}}</h2>
+</flickr-photo>
+
+</div> -->
