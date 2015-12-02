@@ -13,12 +13,12 @@
           console.log(xmasCart);
           console.log(xmasCart.length);
 
-          this.xmasListCart = xmasCart;
-          console.log(xmasListCart);
-          $scope.numberOfItems = vm.getNumberInCart();
+          vm.xmasListCart = xmasCart;
+          console.log(vm.xmasListCart);
+          $scope.numberOfItems = vm.getNumberInCart(xmasCart);
         });
-          vm.getNumberInCart = function(){
-          var numberinCart = xmasListCart.length;
+          vm.getNumberInCart = function(arg){
+          var numberinCart = arg.length;
           // console.log(numberinCart);
           return numberinCart;
         };
