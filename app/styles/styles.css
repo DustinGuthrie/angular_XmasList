@@ -1,0 +1,94 @@
+.homepage {
+  text-align: center;
+  padding-top: 30px; }
+  .homepage h1 {
+    font-size: 7em;
+    color: white; }
+
+h2 {
+  margin-top: 0;
+  font-size: 3em;
+  color: white; }
+
+.backgroundcontainer {
+  background-image: url(http://wallensteyn.com/wp-content/uploads/2015/10/CHRISTMAS-WALLPAPER-275.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  position: fixed;
+  top: 45px;
+  left: 0;
+  bottom: 0;
+  right: 0; }
+
+.checkout {
+  background-image: url(http://wallensteyn.com/wp-content/uploads/2015/10/CHRISTMAS-WALLPAPER-275.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  position: fixed;
+  top: 50px;
+  left: 0;
+  bottom: 0;
+  right: 0; }
+
+.admin {
+  float: left; }
+
+.viewCart {
+  float: right;
+  margin-right: 50px; }
+
+.cartItems {
+  float: right;
+  margin-top: 80px; }
+
+.hidden {
+  display: none; }
+
+.listcontainer {
+  background-image: url(http://wallensteyn.com/wp-content/uploads/2015/10/CHRISTMAS-WALLPAPER-275.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  position: fixed;
+  top: 50px;
+  left: 0;
+  bottom: 0;
+  right: 0; }
+
+.ideas {
+  margin-top: 10px;
+  text-align: center; }
+
+.products {
+  margin-left: 0;
+  margin-top: 80px;
+  text-align: center;
+  padding: 0; }
+
+.viewCart {
+  float: right;
+  margin-top: 120px;
+  margin-right: 130px; }
+
+.cart {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px; }
+
+.cartProd {
+  text-align: center;
+  margin-top: 100px; }
+
+.col-md-8 h1 {
+  align-text: center; }
+
+.home {
+  float: left;
+  margin-top: 80px; }
+
+.homeCart {
+  float: left;
+  margin-top: 40px;
+  margin-left: 40px; }

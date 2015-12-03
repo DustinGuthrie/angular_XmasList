@@ -1,0 +1,23 @@
+{
+  "name": "angular_intro",
+  "version": "1.0.0",
+  "description": "Anglar Intro first herokuapp",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DustinGuthrie/angular_XmasList.git"
+  },
+  "author": "Dustin Guthrie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DustinGuthrie/angular_XmasList/issues"
+  },
+  "homepage": "https://github.com/DustinGuthrie/angular_XmasList#readme",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}

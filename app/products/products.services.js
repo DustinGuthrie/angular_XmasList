@@ -8,11 +8,10 @@
 
       var addList = function (newList) {
         $http.post(url, newList).then(function (res) {
-          console.log(res);
+          // console.log(res);
         });
       };
       var getLists = function () {
-        // console.log(url);
         return $http.get(url);
       };
       // var deleteItem = function (idx) {

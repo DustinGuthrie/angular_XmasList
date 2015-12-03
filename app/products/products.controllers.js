@@ -14,7 +14,7 @@
         // $scope.numberOfItems = vm.getNumber();
       });
         vm.addList = function (newList) {
-          console.log(newList);
+          // console.log(newList);
           XmasListService.createList(newList);
         };
         vm.addCart = function (newCart) {

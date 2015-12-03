@@ -1,45 +1,36 @@
 .homepage {
   text-align: center;
-  padding-top: 80px; }
+  padding-top: 30px; }
   .homepage h1 {
-    font-size: 4em;
-    color: white; }
-  .homepage h3 {
+    font-size: 7em;
     color: white; }
 
-.container {
+h2 {
+  margin-top: 0;
+  font-size: 3em;
+  color: white; }
+
+.backgroundcontainer {
   background-image: url(http://wallensteyn.com/wp-content/uploads/2015/10/CHRISTMAS-WALLPAPER-275.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   width: 100%;
   position: fixed;
-  top: -80px;
+  top: 45px;
   left: 0;
   bottom: 0;
-  right: 0;
-  overflow: auto; }
+  right: 0; }
 
 .checkout {
   background-image: url(http://wallensteyn.com/wp-content/uploads/2015/10/CHRISTMAS-WALLPAPER-275.jpg);
-  opacity: 0.9;
   background-repeat: no-repeat;
   background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   width: 100%;
   position: fixed;
-  top: -50px;
+  top: 50px;
   left: 0;
   bottom: 0;
-  right: 0;
-  overflow: auto; }
-
-.createList {
-  float: right; }
+  right: 0; }
 
 .admin {
   float: left; }
@@ -55,30 +46,26 @@
 .hidden {
   display: none; }
 
-.list {
+.listcontainer {
   background-image: url(http://wallensteyn.com/wp-content/uploads/2015/10/CHRISTMAS-WALLPAPER-275.jpg);
-  opacity: 0.8;
   background-repeat: no-repeat;
   background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   width: 100%;
   position: fixed;
-  top: -80px;
+  top: 50px;
   left: 0;
   bottom: 0;
-  right: 0;
-  overflow: auto; }
+  right: 0; }
 
 .ideas {
-  margin-top: 100px;
+  margin-top: 10px;
   text-align: center; }
 
 .products {
   margin-left: 0;
-  margin-top: 120px;
-  text-align: center; }
+  margin-top: 80px;
+  text-align: center;
+  padding: 0; }
 
 .viewCart {
   float: right;
@@ -86,21 +73,20 @@
   margin-right: 130px; }
 
 .cart {
-  /*width: 100%;*/
   text-align: center;
   margin-top: 50px;
   margin-bottom: 50px; }
 
 .cartProd {
   text-align: center;
-  margin-top: 25px; }
+  margin-top: 100px; }
 
 .col-md-8 h1 {
   align-text: center; }
 
 .home {
   float: left;
-  margin-top: 60px; }
+  margin-top: 80px; }
 
 .homeCart {
   float: left;
