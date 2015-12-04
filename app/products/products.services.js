@@ -4,7 +4,7 @@
     .module('products')
 
     .factory('XmasListService', function ($http) {
-      var url = 'http://tiny-tiny.herokuapp.com/collections/guthriexmasList';
+      var url = 'https://tiny-tiny.herokuapp.com/collections/guthriexmasList';
 
       var addList = function (newList) {
         $http.post(url, newList).then(function (res) {
