@@ -7,6 +7,7 @@
       var url = 'http://tiny-tiny.herokuapp.com/collections/cart';
 
       var addCart = function (newCart) {
+        delete newCart ._id;
         $http.post(url, newCart).then(function (res) {
           console.log(res);
         });
@@ -15,7 +16,9 @@
         return $http.get(url);
       };
       var deleteCart = function (idx) {
-        return $http.delete(url + '/' + idx);
+        $http.delete(url + '/' + idx).then(function (res) {
+          console.log(res);
+        });
       };
 
       return {
