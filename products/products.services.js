@@ -7,6 +7,7 @@
       var url = 'http://tiny-tiny.herokuapp.com/collections/guthriexmasList';
 
       var addList = function (newList) {
+        console.log(newList);
         $http.post(url, newList).then(function (res) {
           console.log(res);
         });
@@ -19,7 +20,7 @@
       //   return $http.delete(url + '/' + idx);
       // };
       return {
-        createList: addList,
+        addList: addList,
         getLists: getLists,
         // deleteItem: deleteItem
       };

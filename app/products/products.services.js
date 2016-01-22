@@ -7,6 +7,7 @@
       var url = 'https://tiny-tiny.herokuapp.com/collections/guthriexmasList';
 
       var addList = function (newList) {
+        console.log("addList is firing products service", newList);
         $http.post(url, newList).then(function (res) {
           // console.log(res);
         });

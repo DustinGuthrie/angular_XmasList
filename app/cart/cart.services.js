@@ -4,7 +4,7 @@
     .module('cart')
 
     .factory('CartService', function ($http) {
-      var url = 'https://tiny-tiny.herokuapp.com/collections/cart';
+      var url = 'https://tiny-tiny.herokuapp.com/collections/cartlist';
 
       var addCart = function (newCart) {
         delete newCart._id;

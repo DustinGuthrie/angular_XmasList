@@ -35,6 +35,6 @@
     <!-- <div class="col-md-3">
       <a href='#/cart'><button class="btn btn-default viewCart"><span class="glyphicon glyphicon-shopping-cart"></span>&nbsp&nbsp{{numberOfItems}} View Cart</button></a>
     </div> -->
+    <xmas-listitem ng-repeat="item in listCtrl.xmasListExamples" guthriexmas-list="item" action="listCtrl.addCart(item)"></xmas-listitem>
   </div>
 </div>
-<xmas-listitem ng-repeat="item in listCtrl.xmasListExamples" guthriexmas-list="item" action="listCtrl.addCart"></xmas-listitem>
